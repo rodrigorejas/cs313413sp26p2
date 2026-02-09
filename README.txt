@@ -4,7 +4,7 @@ TestList.java and TestIterator.java
 
 	TODO also try with a LinkedList - does it make any difference?
 
-		Your answer here.
+		Answer: Changing from an ArrayList to a LinkedList did not make a difference for any of the tests.
 
 TestList.java
 
@@ -12,11 +12,11 @@ TestList.java
 
 		list.remove(5); // what does this method do?
 
-			Your answer here.
+			Answer: This method removes the element at index 5.
 
 		list.remove(Integer.valueOf(5)); // what does this one do?
 
-			Your answer here.
+			Answer: This method removes the first object with value 5 from the list.
 
 TestIterator.java
 
@@ -24,7 +24,7 @@ TestIterator.java
 
 		i.remove(); // what happens if you use list.remove(77)?
 
-			Your answer here.
+			Answer: If that is used then it shows a exception error.
 
 TestPerformance.java
 
@@ -33,37 +33,36 @@ TestPerformance.java
 	These are examples of SIZEs you might choose, you can choose others if you wish.
 
 	SIZE 10
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
-		testArrayListAccess:     val1 val2 val3 val4 val5 val6
-        testLinkedListAccess:    val1 val2 val3 val4 val5 val6
+			         #1  #2  #3  #4  #5   	
+        testArrayListAddRemove:  61  103 107 98  98   
+        testLinkedListAddRemove: 134 40  48  49  45
+	testArrayListAccess:     37  27  24  40  30 
+        testLinkedListAccess:    23  19  19  22  22 
 
 	SIZE 100
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
-		testArrayListAccess:     val1 val2 val3 val4 val5 val6
-        testLinkedListAccess:    val1 val2 val3 val4 val5 val6
+				 #1  #2  #3  #4  #5  	
+        testArrayListAddRemove:  131 126 137 142 147  
+        testLinkedListAddRemove: 50  41  51  38  46
+	testArrayListAccess:     34  27  44  23  36 
+        testLinkedListAccess:    41  38  42  37  41 
 
 	SIZE 1000
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
-		testArrayListAccess:     val1 val2 val3 val4 val5 val6
-        testLinkedListAccess:    val1 val2 val3 val4 val5 val6
-
+				 #1  #2  #3  #4  #5    	
+        testArrayListAddRemove:  406 400 467 480 448  
+        testLinkedListAddRemove: 48  60  40  46  46 
+	testArrayListAccess:     34  41  29  31  33 
+        testLinkedListAccess:    505 495 414 417 393 
 	SIZE 10000
-								  #1   #2   #3   #4   #5   #6 	... (as many tests as you ran)
-        testArrayListAddRemove:  val1 val2 val3 val4 val5 val6  ... (fill these in in ms)
-        testLinkedListAddRemove: val1 val2 val3 val4 val5 val6
-		testArrayListAccess:     val1 val2 val3 val4 val5 val6
-        testLinkedListAccess:    val1 val2 val3 val4 val5 val6
+				 #1   #2   #3   #4   #5  
+        testArrayListAddRemove:  3375 3305 48   3270 3820 
+        testLinkedListAddRemove: 47   46   50   46   46
+	testArrayListAccess:     28   31   38   37   29 
+        testLinkedListAccess:    4746 4945 6106 4822 5927
 
 	listAccess - which type of List is better to use, and why?
 
-		Your answer here.
+		Answer: ArrayList is better to use because of the run time. 
 
 	listAddRemove - which type of List is better to use, and why?
 
-		Your answer here.
+		Answer: LinkedList is better to use because of add or remove can be done easily without shifting elements.
